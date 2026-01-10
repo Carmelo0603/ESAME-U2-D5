@@ -59,12 +59,13 @@ button {
 #primasezione {
   background-color: #ffc017;
   display: flex;
-  height: 450px;
+  height: auto;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   border-bottom: solid 1px;
   align-content: center;
+  padding-bottom: 1em;
 }
 
 /* Animazione svg */
@@ -306,6 +307,7 @@ button {
   color: #757575;
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
   header {
     padding: 0 1.5rem;
@@ -398,5 +400,108 @@ button {
 
   #discover-section ul li {
     font-size: 8px;
+  }
+}
+
+/* Medium */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  header {
+    padding: 0 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-right: 2em;
+    align-items: center;
+  }
+
+  #primasezione {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  #heroSection {
+    display: flex;
+    padding: 0 6em;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #heroSection h1 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  #heroSection p {
+    font-size: 1.2rem;
+  }
+
+  #heroSection button {
+    align-self: center;
+  }
+
+  #containerSvg {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+  }
+
+  #titletrending {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+  }
+
+  #trendingSection {
+    padding: 0 1.5rem 2rem 1.5rem;
+    justify-content: center;
+  }
+
+  #articleSection {
+    flex-direction: column-reverse;
+    padding: 1.5rem;
+    gap: 3rem;
+  }
+
+  .full-article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info-2 {
+    width: 100%;
+  }
+
+  .only-text {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .right-photo {
+    height: 140px;
+    object-fit: cover;
+  }
+
+  #left-block {
+    padding: 04em;
+  }
+
+  #right-block {
+    padding: 0 4em;
+
+    padding-top: 2rem;
+  }
+
+  #discover-section ul li {
+    font-size: 14px;
+  }
+
+  #discover-section-2 li a {
+    font-size: 13px;
   }
 }
