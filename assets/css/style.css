@@ -305,3 +305,98 @@ button {
   text-decoration: none;
   color: #757575;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    width: auto;
+    padding-right: 1em;
+  }
+  nav ul li:not(:last-child) {
+    display: none;
+    font-size: 8px;
+  }
+
+  #primasezione {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  #heroSection {
+    padding: 2rem 1.5rem;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #heroSection h1 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  #heroSection p {
+    font-size: 1.2rem;
+  }
+
+  #heroSection button {
+    align-self: center;
+  }
+
+  #containerSvg {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+    display: none;
+  }
+
+  #titletrending {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+  }
+
+  #trendingSection {
+    padding: 0 1.5rem 2rem 1.5rem;
+    justify-content: center;
+  }
+
+  #articleSection {
+    flex-direction: column-reverse;
+    padding: 1.5rem;
+    gap: 3rem;
+  }
+
+  .full-article {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+  }
+
+  .info-2 {
+    width: 100%;
+  }
+
+  .only-text {
+    height: auto;
+    gap: 1rem;
+  }
+
+  .right-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  #right-block {
+    border-top: solid 1px #ededed;
+    padding-top: 2rem;
+  }
+
+  #discover-section ul li {
+    font-size: 8px;
+  }
+}
