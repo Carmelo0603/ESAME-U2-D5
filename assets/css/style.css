@@ -37,6 +37,11 @@ header.sticky nav button {
   color: white;
 }
 
+header.sticky nav button:hover {
+  background-color: #0e4b0c;
+  color: white;
+}
+
 .logoHeader {
   align-content: center;
 }
@@ -64,7 +69,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   transform: scale(1.1);
-  color: white;
+  color: rgb(227, 227, 227);
 }
 
 nav button {
@@ -341,6 +346,20 @@ button:hover {
   border: solid 0.5px #b4b4b4;
   padding: 1em;
   font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+#discover-section ul li:hover {
+  transform: scale(1.1);
+  background-color: #000000;
+}
+#discover-section ul li a:hover {
+  color: white;
+}
+
+#discover-section ul li a {
+  text-decoration: none;
+  color: #888888;
 }
 
 #right-block h3 {
