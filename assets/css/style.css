@@ -11,13 +11,39 @@ header {
   background-color: #ffc017;
   height: 70px;
   border-bottom: solid 1px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
 }
+
+header {
+  transition: background-color 0.5s ease;
+}
+
+header button {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header.sticky {
+  background-color: white;
+}
+
+header.sticky nav button {
+  background-color: #1a8917;
+  color: white;
+}
+
 .logoHeader {
   align-content: center;
 }
 nav {
   display: flex;
   align-content: center;
+  position: sticky;
 }
 
 nav ul {
@@ -78,9 +104,21 @@ button:hover {
   border-bottom: solid 1px;
   align-content: center;
   padding-bottom: 1em;
+  margin-top: 70px;
 }
 
 /* Animazione svg */
+.m-on {
+  fill: #000000 !important;
+}
+
+.m-off {
+  fill: #ffc017 !important;
+}
+
+#containerSvg path {
+  transition: fill 0.4s ease;
+}
 
 #heroSection {
   display: flex;
