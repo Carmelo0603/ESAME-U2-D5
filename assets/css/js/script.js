@@ -1,3 +1,5 @@
 const getLetters = document.querySelectorAll("#containerSvg path");
-
-function twinkle() {}
+console.log(getLetters);
+function twinkle() {
+  getLetters;
+}
